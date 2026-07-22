@@ -31,9 +31,11 @@ if (!requireNamespace("renv", quietly = TRUE)) {
   fail("Package 'renv' is required. Install it with install.packages('renv').")
 }
 
-# Ensure the clean clone is actually using its project-specific renv library.
-# This prevents globally installed packages from producing a false PASS.
-renv::activate(project = project_root)
+# Verify that the current R session is already using the project-specific
+# renv library. Do not call renv::activate() here: in RStudio it can request
+# a session restart while this script is still running, producing a restart
+# loop during validation. The project should be activated by the repository
+# .Rprofile when RStudio opens the project.
 active_project <- normalizePath(
   renv::project(),
   winslash = "/",

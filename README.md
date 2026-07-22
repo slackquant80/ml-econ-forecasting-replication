@@ -6,12 +6,14 @@ The study compares nine individual forecasting models and three forecast combina
 
 ## Release status
 
-This is a **public-release candidate (v0.1.0)** prepared from the validated internal research release. The internal validation recorded 139 checks, zero failures, and status `PASS`. Local absolute paths and development-only artifacts have been removed from this public copy.
+This is a **public-release candidate (v0.1.1)** prepared from the validated internal research release. The internal validation recorded 139 checks, zero failures, and status `PASS`. Local absolute paths and development-only artifacts have been removed from this public copy.
+
+The reference dependency environment is now recorded in `renv.lock`. A release-machine validation confirmed R 4.6.0, the seven direct package versions reported in the paper, a consistent `renv` project state, and successful loading of all project functions. A clean-clone `renv::restore()` test and the final end-to-end release run remain pre-release gates.
 
 ## Repository contents
 
 - `functions/`, `main.R`, `config.R`: forecasting and statistical-validation engine
-- `scripts/`: data preparation, FULL experiment workflow, release validation, and paper exports
+- `scripts/`: environment validation, data preparation, FULL experiment workflow, release validation, and paper exports
 - `results/frozen_runs/`: CSV outputs from the four paper-core FULL runs (RDS objects and logs excluded)
 - `results/paper_exports/`: tables and figure-data exports used by the manuscript
 - `results/release/`: sanitized release manifest and validation records
@@ -20,26 +22,47 @@ This is a **public-release candidate (v0.1.0)** prepared from the validated inte
 
 ## Quick verification
 
+Repository structure, CSV readability, and privacy-path checks:
+
 ```bash
 python scripts/verify-public-release.py
 ```
 
+Reference R environment and function-loading check:
+
+```bash
+Rscript scripts/validate-r-environment.R
+```
+
+## Restore the R environment
+
+Use R 4.6.0. On Windows, install Rtools45 when source compilation is required. From the repository root:
+
+```r
+install.packages("renv", repos = "https://cloud.r-project.org")
+renv::restore()
+renv::status()
+```
+
+The lockfile records direct and transitive package dependencies. See `REPRODUCIBILITY.md` for the reference environment and validation scope.
+
 ## Full reproduction
 
-1. Install R 4.6.0 or a compatible recent R release.
-2. Install packages:
+1. Restore and validate the dependency environment:
    ```bash
-   Rscript scripts/install-replication-packages.R
+   Rscript -e "install.packages('renv', repos='https://cloud.r-project.org')"
+   Rscript -e "renv::restore()"
+   Rscript scripts/validate-r-environment.R
    ```
-3. Download and checksum the frozen FRED-MD vintage:
+2. Download and checksum the frozen FRED-MD vintage:
    ```bash
    Rscript scripts/prepare-fred-md-data.R
    ```
-4. Run the four FULL experiments, validate, publish pointers, and freeze:
+3. Run the four FULL experiments, validate, publish pointers, and freeze:
    ```bash
    Rscript scripts/run-ssrn-core-experiments.R --publish=true --freeze=true --seed=20260716
    ```
-5. Export paper tables and figure data:
+4. Export paper tables and figure data:
    ```bash
    Rscript scripts/export-ssrn-paper-tables.R
    ```

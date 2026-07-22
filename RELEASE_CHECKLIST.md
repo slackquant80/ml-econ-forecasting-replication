@@ -10,11 +10,15 @@
 - [x] Manuscript PDF included
 - [x] Known local absolute paths and employer-directory strings scanned
 - [x] CSV files parsed successfully
-- [x] SHA-256 inventory generated
-- [ ] Run R syntax/package check on the release machine
-- [ ] Generate and test `renv.lock` on the release machine
-- [ ] Create private GitHub repository and push candidate
-- [ ] Review GitHub Actions result and rendered files
+- [x] Initial SHA-256 inventory generated
+- [x] Run R version, direct-package, syntax, and function-loading checks on the reference machine
+- [x] Generate `renv.lock` and confirm the current project is consistent
+- [x] Create private GitHub repository and push candidate
+- [x] Review GitHub Actions result and rendered files
+- [ ] Test `renv::restore()` in a clean clone or clean project library
+- [ ] Run the final frozen-output/release validation workflow from the clean clone
+- [ ] Regenerate SHA-256 inventory after all tracked files are final
+- [ ] Review public repository contents and links one final time
 - [ ] Make repository public
 - [ ] Create GitHub `v1.0.0` release
 - [ ] Archive release with Zenodo and record DOI

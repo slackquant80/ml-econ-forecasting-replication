@@ -1,16 +1,16 @@
 # ML Economic Forecasting — replication materials
 
-This repository contains the code, frozen derived outputs, validation records, and manuscript associated with **“Beyond Average Accuracy: Statistical Distinguishability and Temporal Concentration in Data-Rich Macroeconomic Forecasting.”**
-
-The study compares nine individual forecasting models and three forecast combinations for CPI inflation, PCE inflation, industrial production growth, and changes in unemployment at 1-, 3-, 6-, and 12-month horizons. It separates average accuracy from statistical distinguishability and temporal durability.
+This repository contains the code, frozen derived outputs, validation records, and manuscript associated with **“Beyond Average Accuracy: Statistical Distinguishability and Temporal Concentration in Data-Rich Macroeconomic Forecasting.”** The study compares nine individual forecasting models and three forecast combinations for CPI inflation, PCE inflation, industrial production growth, and changes in unemployment at 1-, 3-, 6-, and 12-month horizons. It separates average accuracy from statistical distinguishability and temporal durability.
 
 Repository: https://github.com/slackquant80/ml-econ-forecasting-replication
 
 ## Release status
 
-This is the **v1.0.0 release candidate (`1.0.0-rc.1`)** prepared from the validated internal research release. The internal validation recorded 139 checks, zero failures, and status `PASS`. Local absolute paths and development-only artifacts have been removed from this public copy.
+This branch contains the finalized source tree for **v1.0.0**. The internal research release recorded 139 checks, zero failures, and status `PASS`. Local absolute paths and development-only artifacts have been removed from the public package.
 
-The dependency environment is recorded in `renv.lock`. Validation on a clean GitHub clone confirmed R 4.6.0, restoration into a project-local `renv` library, the seven direct package versions reported in the paper, a consistent `renv` state, and successful loading of all project functions. The archived CSV release and paper exports are also checked independently by Python. A complete four-target FULL rerun from the clean clone remains the final computational release gate.
+The dependency environment is recorded in `renv.lock`. Validation on a clean GitHub clone confirmed R 4.6.0, restoration into a project-local `renv` library, the seven direct package versions reported in the paper, a consistent `renv` state, and successful loading of all project functions. The archived CSV release and paper exports are checked independently by Python.
+
+An end-to-end four-target FULL rerun was also completed from the clean clone on the reference Windows environment. The frozen FRED-MD checksum was verified, the complete workflow finished, the SSRN research-protocol validation returned `PASS`, and the paper-table export completed. The rerun directories were validation-only and are not committed; the repository retains the frozen paper release as its archival result set. See `results/release/FULL_RERUN_VALIDATION.md` and `REPRODUCIBILITY.md` for scope and limitations.
 
 ## Repository contents
 
@@ -56,24 +56,33 @@ The lockfile records direct and transitive package dependencies. See `REPRODUCIB
 ## Full reproduction
 
 1. Restore and validate the dependency environment:
+
    ```bash
    Rscript -e "install.packages('renv', repos='https://cloud.r-project.org')"
    Rscript -e "renv::restore(prompt=FALSE)"
    Rscript scripts/validate-r-environment.R
    ```
+
 2. Download and checksum the frozen FRED-MD vintage:
+
    ```bash
    Rscript scripts/prepare-fred-md-data.R
    ```
+
 3. Run the four FULL experiments, validate, publish pointers, and freeze:
+
    ```bash
    Rscript scripts/run-ssrn-core-experiments.R --publish=true --freeze=true --seed=20260716
    ```
+
 4. Export paper tables and figure data:
+
    ```bash
    Rscript scripts/export-ssrn-paper-tables.R
    ```
+
 5. Regenerate and verify the repository inventories after the tracked release files are final:
+
    ```bash
    python scripts/generate-release-inventory.py
    python scripts/generate-release-inventory.py --check
@@ -95,4 +104,6 @@ https://slackquant.shinyapps.io/ml_econ_forecasting/
 
 ## License and citation
 
-Code is released under the MIT License. The manuscript and third-party source data are excluded from that license. Citation metadata are provided in `CITATION.cff`. The final Zenodo DOI will be added to `CITATION.cff` and the manuscript when the `v1.0.0` release is archived.
+Code is released under the MIT License. The manuscript and third-party source data are excluded from that license. Citation metadata are provided in `CITATION.cff`.
+
+The permanent Zenodo DOI will be added to `CITATION.cff`, this README, and the manuscript after the GitHub `v1.0.0` release is archived.

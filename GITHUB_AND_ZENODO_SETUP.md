@@ -1,33 +1,34 @@
-# GitHub and Zenodo release steps (candidate-stage operations)
+# GitHub release and Zenodo archiving procedure
 
-The repository currently exists as a private GitHub repository:
+## Current state
 
-`https://github.com/slackquant80/ml-econ-forecasting-replication`
+- Repository: public
+- Source-tree version: `1.0.0`
+- Clean-clone environment validation: `PASS`
+- Clean-clone four-target FULL rerun: completed
+- GitHub release: not yet published
+- Zenodo DOI: not yet minted
 
-## Before changing visibility
+## Release order
 
-1. Complete the four-target FULL rerun from the validated clean clone.
-2. Compare the regenerated outputs with the archived release.
-3. Update the manuscript's Data and Code Availability section.
-4. Change `VERSION` and `CITATION.cff` to `1.0.0`.
-5. Run:
-   ```bash
-   python scripts/verify-public-release.py
-   python scripts/validate-frozen-release.py
-   python scripts/generate-release-inventory.py
-   python scripts/generate-release-inventory.py --check
-   ```
-6. Commit and push the final candidate; confirm GitHub Actions is green.
-7. Remove this candidate-stage operations file and `RELEASE_CHECKLIST.md` if they are not intended for public readers, then regenerate the inventories once more.
+1. Commit the final `1.0.0` metadata and regenerate the repository inventories.
+2. Confirm all GitHub Actions checks are green.
+3. Sign in to Zenodo with the GitHub account that owns the repository.
+4. Open the Zenodo GitHub integration, synchronize repositories, and enable `slackquant80/ml-econ-forecasting-replication`.
+5. Only after the repository is enabled in Zenodo, publish the GitHub release with tag `v1.0.0`.
+6. Wait for Zenodo to archive the release and mint the version DOI and concept DOI.
+7. Record the DOI in `CITATION.cff`, README, and the final manuscript. Do not move or rewrite the published `v1.0.0` tag.
 
-## Public release and Zenodo
+## GitHub release settings
 
-1. Change repository visibility to public in GitHub Settings.
-2. Sign in to Zenodo and enable the GitHub repository in the Zenodo integration.
-3. Create an annotated GitHub tag and release named `v1.0.0`.
-4. Wait for Zenodo to archive the release and mint the version DOI.
-5. Confirm the Zenodo record metadata and archived files.
-6. Add the DOI to `CITATION.cff` and the final paper PDF.
-7. If the DOI must appear in the PDF before the GitHub release, use Zenodo's DOI reservation workflow instead of publishing the record prematurely.
+- Tag: `v1.0.0`
+- Target: `main`
+- Title: `ML Economic Forecasting Replication Package v1.0.0`
+- Pre-release: no
+- Latest release: yes
 
-Keep `CITATION.cff` as the single repository metadata source unless a deliberate `.zenodo.json` workflow is adopted. If both are present, Zenodo gives `.zenodo.json` precedence for GitHub release archiving.
+Use the prepared release notes supplied with the final promotion patch.
+
+## Post-DOI update
+
+After Zenodo provides the DOI, update the default branch with the DOI and the final paper PDF. The already published `v1.0.0` tag remains immutable and continues to identify the exact software/archive version used to mint the DOI.

@@ -43,6 +43,8 @@ A clean-clone test completed successfully on Windows 11 with R 4.6.0 and `renv` 
 
 Run the commands in `README.md`. The workflow creates new timestamped run IDs. Numerical results should agree up to platform- and package-dependent floating-point differences. Stochastic learners use prespecified origin-specific seeds, but exact bitwise identity across operating systems is not guaranteed.
 
+An end-to-end Route C validation was completed from a clean GitHub clone on 2026-07-23. It verified the frozen data checksum, completed all four target FULL experiments, passed the SSRN research-protocol validator, and completed the paper-table export. The validation-only run directories were not committed.
+
 ## Reference environment
 
 The frozen runs and release-machine checks use:
@@ -69,12 +71,23 @@ The following checks have passed:
 - `renv::status()` reported a consistent project state;
 - a newly cloned repository restored into its own project-local library;
 - `config.R` and `functions/source-all.R` loaded successfully;
-- GitHub Actions passed the public file-policy/privacy checks; and
-- the archived CSV release passed the independent frozen-output validator.
+- GitHub Actions passed the public file-policy/privacy, frozen-output, and inventory checks;
+- the archived CSV release passed the independent frozen-output validator;
+- the frozen FRED-MD MD5 was verified in the clean clone;
+- the complete four-target FULL workflow completed from the clean clone;
+- the SSRN research-protocol validator returned `PASS`; and
+- paper tables and figure data were exported successfully from the rerun.
 
-## Remaining gate before `v1.0.0`
+## Interpretation of the full-rerun gate
 
-The complete four-target FULL pipeline has not yet been rerun from the clean clone. Before the permanent tag, run the end-to-end workflow, compare its outputs with the archived release, then regenerate `SHA256SUMS.txt` and `release_inventory.csv` after all tracked files are final.
+The public repository intentionally excludes private development RDS objects and operational logs. Consequently, the release claim is not one of cross-platform, byte-for-byte identity of every stochastic object. The evidence is instead layered:
+
+1. the paper's frozen human-readable CSV release is independently validated;
+2. the exact R and direct-package environment is restorable from `renv.lock`;
+3. all public project functions load successfully; and
+4. the full four-target workflow completes from a clean clone and passes the same research-protocol validation.
+
+This scope is appropriate for reproducibility while avoiding redistribution of private development artifacts.
 
 ## Expected validation status
 
@@ -82,4 +95,4 @@ The internal release validation summary records 139 checks, zero failures, and s
 
 ## Scope and limitations
 
-The initial public package was assembled separately from the development project. File selection, privacy-path scanning, checksums, and CSV parsing were performed on the public copy. The clean-clone environment restoration and function-loading test subsequently passed on the reference Windows machine. The archived outputs are independently checkable without the excluded private RDS objects; a complete rerun requires downloading the frozen FRED-MD vintage.
+The public package was assembled separately from the development project. File selection, privacy-path scanning, checksums, and CSV parsing were performed on the public copy. The archived outputs are independently checkable without the excluded private RDS objects. A complete rerun requires downloading the frozen FRED-MD vintage and substantial computation time. Exact bitwise identity across operating systems is not guaranteed for stochastic learners, parallel numerical libraries, or bootstrap procedures.

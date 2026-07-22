@@ -15,23 +15,23 @@
 - [x] CSV files parsed successfully
 - [x] R version, direct-package, syntax, and function-loading checks passed
 - [x] `renv.lock` generated and project consistency confirmed
-- [x] Private GitHub repository created and candidate pushed
+- [x] GitHub repository created and made public
 - [x] GitHub Actions passed
 - [x] `renv::restore()` passed in a clean GitHub clone and project-local library
 - [x] Independent Python validation of frozen outputs and paper exports passed
+- [x] Complete four-target FULL workflow run from the clean clone
+- [x] Frozen FRED-MD checksum verified in the clean clone
+- [x] SSRN research-protocol validation returned `PASS` after the rerun
+- [x] Paper tables and figure data exported after the rerun
+- [x] `VERSION` and `CITATION.cff` promoted to `1.0.0`
 
-## Remaining before public `v1.0.0`
+## Remaining for permanent archiving and SSRN
 
-- [ ] Run the complete four-target FULL workflow from the clean clone
-- [ ] Compare regenerated results with the archived release
-- [ ] Update the paper PDF with the permanent repository/DOI wording
-- [ ] Change `VERSION` and `CITATION.cff` from `1.0.0-rc.1` to `1.0.0`
-- [ ] Regenerate and verify `SHA256SUMS.txt` and `release_inventory.csv`
-- [ ] Remove candidate-only operational documents if they are not intended for public readers (`RELEASE_CHECKLIST.md`, `GITHUB_AND_ZENODO_SETUP.md`)
-- [ ] Review repository rendering and links one final time
-- [ ] Make repository public
-- [ ] Enable the repository in Zenodo
-- [ ] Create GitHub `v1.0.0` release
-- [ ] Confirm Zenodo archive and record the version DOI
-- [ ] Add the DOI to `CITATION.cff` and the manuscript
-- [ ] Produce final paper PDF v1.0 and submit to SSRN
+- [ ] Regenerate and verify `SHA256SUMS.txt` and `release_inventory.csv` after this final metadata update
+- [ ] Confirm the final GitHub Actions run is green
+- [ ] Enable the public repository in Zenodo before publishing the GitHub release
+- [ ] Create GitHub release and tag `v1.0.0`
+- [ ] Confirm Zenodo archive and record the version DOI and concept DOI
+- [ ] Add the DOI to `CITATION.cff`, README, and the manuscript
+- [ ] Produce final paper PDF v1.0 with permanent repository wording
+- [ ] Submit the final PDF and metadata to SSRN

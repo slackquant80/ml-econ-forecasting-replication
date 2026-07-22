@@ -5,48 +5,28 @@
       "run_id": "CPIAUCSL_20260721_234514_FULL_644",
       "forecast_rows": 4320,
       "models": 12,
-      "horizons": [
-        1,
-        3,
-        6,
-        12
-      ]
+      "horizons": [1, 3, 6, 12]
     },
     {
       "target": "INDPRO",
       "run_id": "INDPRO_20260722_082341_FULL_529",
       "forecast_rows": 4320,
       "models": 12,
-      "horizons": [
-        1,
-        3,
-        6,
-        12
-      ]
+      "horizons": [1, 3, 6, 12]
     },
     {
       "target": "PCEPI",
       "run_id": "PCEPI_20260722_010003_FULL_507",
       "forecast_rows": 4320,
       "models": 12,
-      "horizons": [
-        1,
-        3,
-        6,
-        12
-      ]
+      "horizons": [1, 3, 6, 12]
     },
     {
       "target": "UNRATE",
       "run_id": "UNRATE_20260722_092406_FULL_161",
       "forecast_rows": 4320,
       "models": 12,
-      "horizons": [
-        1,
-        3,
-        6,
-        12
-      ]
+      "horizons": [1, 3, 6, 12]
     }
   ],
   "total_forecast_rows": 17280,
@@ -75,13 +55,10 @@
     "12": 25
   },
   "mean_12m_winner_switch_rate": 0.2913714574898785,
-  "winner_switch_rate_range": [
-    0.1794871794871795,
-    0.38461538461538464
-  ],
+  "winner_switch_rate_range": [0.1794871794871795, 0.38461538461538464],
   "mean_top12_positive_share_SE": 0.855996093761454,
   "mean_top12_deterioration_share_SE": 0.8912396054896341,
-  "candidate_version": "1.0.0-rc.1",
+  "release_version": "1.0.0",
   "clean_clone_validation": {
     "validated_at": "2026-07-23",
     "operating_system": "Windows 11 x64",
@@ -96,5 +73,16 @@
   "archived_output_python_validation": {
     "status": "PASS"
   },
-  "full_pipeline_rerun_from_clean_clone": false
+  "full_pipeline_rerun_from_clean_clone": true,
+  "full_pipeline_rerun_validation": {
+    "validated_at": "2026-07-23",
+    "operating_system": "Windows 11 x64",
+    "r_version": "4.6.0",
+    "data_checksum_verified": true,
+    "four_target_full_workflow_completed": true,
+    "research_protocol_validation_status": "PASS",
+    "paper_exports_completed": true,
+    "validation_run_outputs_committed": false,
+    "scope": "End-to-end protocol validation; no claim of cross-platform bitwise identity."
+  }
 }

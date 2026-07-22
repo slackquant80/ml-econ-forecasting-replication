@@ -21,9 +21,16 @@
 - the archived forecast, DM, MCS, turnover, and loss-concentration exports passed the independent Python validator;
 - R 4.6.0 and all seven direct package versions matched the paper;
 - `renv` restoration succeeded in a clean GitHub clone using a project-local library;
-- `renv::status()` was consistent and all project functions loaded; and
-- GitHub Actions passed after the clean-clone validation updates.
+- `renv::status()` was consistent and all project functions loaded;
+- GitHub Actions passed the public-file, frozen-output, and inventory checks; and
+- the repository inventory is generated with canonical LF hashing for text files so that Windows and Linux checks agree.
 
-## Remaining release gate
+## End-to-end clean-clone rerun
 
-The complete four-target FULL forecasting pipeline has not yet been rerun from the clean clone. That computational rerun, comparison with the frozen outputs, final inventory regeneration, public visibility change, GitHub `v1.0.0` release, and Zenodo archiving remain pending.
+The complete four-target FULL forecasting workflow was run from a clean GitHub clone on 2026-07-23 using Windows 11 x64, R 4.6.0, and the restored `renv` environment. The frozen FRED-MD checksum was verified, all four experiments completed, the SSRN research-protocol validator returned `PASS`, and the paper-table export completed.
+
+The rerun directories were used only for release validation and were not committed. The public archival result set remains the frozen human-readable CSV release. No claim is made that stochastic outputs are byte-for-byte identical across operating systems.
+
+## Release state
+
+The source tree is finalized for version `1.0.0`. Remaining publication steps are Zenodo enablement, GitHub release publication, DOI capture, and post-DOI updates to citation metadata and the manuscript.

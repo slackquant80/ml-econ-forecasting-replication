@@ -1,0 +1,86 @@
+{
+  "frozen_runs": [
+    {
+      "target": "CPIAUCSL",
+      "run_id": "CPIAUCSL_20260721_234514_FULL_644",
+      "forecast_rows": 4320,
+      "models": 12,
+      "horizons": [
+        1,
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "target": "INDPRO",
+      "run_id": "INDPRO_20260722_082341_FULL_529",
+      "forecast_rows": 4320,
+      "models": 12,
+      "horizons": [
+        1,
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "target": "PCEPI",
+      "run_id": "PCEPI_20260722_010003_FULL_507",
+      "forecast_rows": 4320,
+      "models": 12,
+      "horizons": [
+        1,
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "target": "UNRATE",
+      "run_id": "UNRATE_20260722_092406_FULL_161",
+      "forecast_rows": 4320,
+      "models": 12,
+      "horizons": [
+        1,
+        3,
+        6,
+        12
+      ]
+    }
+  ],
+  "total_forecast_rows": 17280,
+  "release_validation": {
+    "protocol_version": 1.0,
+    "validated_at": "2026-07-22T13:15:41+0900",
+    "current_data_md5": "8591dd9f169f7aeb45b7c91782fbd947",
+    "expected_targets": "CPIAUCSL,PCEPI,INDPRO,UNRATE",
+    "n_checks": 139,
+    "n_failed": 0,
+    "release_status": "PASS"
+  },
+  "primary_dm_rows": 352,
+  "primary_dm_by_loss": {
+    "AE": 176,
+    "SE": 176
+  },
+  "holm_significant_better_by_loss": {
+    "AE": 5,
+    "SE": 0
+  },
+  "mcs_panels": 32,
+  "mcs_survivor_distribution": {
+    "10": 2,
+    "11": 5,
+    "12": 25
+  },
+  "mean_12m_winner_switch_rate": 0.2913714574898785,
+  "winner_switch_rate_range": [
+    0.1794871794871795,
+    0.38461538461538464
+  ],
+  "mean_top12_positive_share_SE": 0.855996093761454,
+  "mean_top12_deterioration_share_SE": 0.8912396054896341,
+  "file_count_before_audit": 243,
+  "total_size_bytes_before_audit": 38482602
+}

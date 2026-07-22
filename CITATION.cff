@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code or the archived outputs, please cite the accompanying paper and this software release."
+title: "ML Economic Forecasting: Replication Materials for Beyond Average Accuracy"
+type: software
+authors:
+  - family-names: Lee
+    given-names: Sungkyu
+    email: scott.lee@yonsei.ac.kr
+    affiliation: "AI Computing Program, Graduate School of Computing, Yonsei University"
+version: 0.1.0
+date-released: 2026-07-22
+license: MIT
+keywords:
+  - macroeconomic forecasting
+  - machine learning
+  - FRED-MD
+  - Diebold-Mariano
+  - Model Confidence Set

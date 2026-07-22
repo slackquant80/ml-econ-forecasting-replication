@@ -1,0 +1,13 @@
+"model","model_family","mean_RMSE_rank","mean_MAE_rank","mean_relative_RMSE","mean_relative_MAE","RMSE_winner_cells","MCS_survival_rate_SE","DM_better_than_RW_cells_SE","MCS_survival_rate_AE","DM_better_than_RW_cells_AE"
+"XGBoost","Boosting",4,4.5,0.821432099862063,0.792470090149997,5,1,0,1,0
+"Ensemble_Mean","Ensemble",4.5,5,0.847212213339874,0.822169440808415,2,1,0,1,1
+"Ensemble_Median","Ensemble",4.625,4.25,0.858893673030604,0.811251156665262,2,1,0,0.9375,1
+"Ensemble_InvRMSE","Ensemble",5.125,5.0625,0.848231486372544,0.822373572768606,0,1,0,1,1
+"RandomForest","Tree",5.1875,6.375,0.824733693196908,0.824947831692252,1,0.875,0,0.9375,1
+"BorutaRF","FeatureSelection+Tree",5.25,6.4375,0.825681178132641,0.85752762883657,2,0.9375,0,0.9375,1
+"AR(4)","Baseline",6.5,6.1875,0.869153595633436,0.857039482360891,2,1,0,1,0
+"Ridge","Regularization",7.5625,6.625,0.931347611133672,0.859134036074905,1,1,0,1,0
+"LASSO","Regularization",7.8125,7.125,0.943053950826314,0.902680072617832,1,1,0,1,0
+"ElasticNet","Regularization",8.0625,7.375,1.00876492652917,0.933475055411937,1,1,0,1,0
+"Factor","Factor",9.4375,9,0.956215879989569,0.891126365353426,0,1,0,0.9375,0
+"RW","Baseline",9.875,10,1,1,0,1,,0.875,

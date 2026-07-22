@@ -1,0 +1,15 @@
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.Renviron
+*.RData
+*.rds
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+data/current.csv
+data/archive/
+results/experiments/
+results/ssrn/data_vintage/

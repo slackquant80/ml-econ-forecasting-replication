@@ -1,0 +1,127 @@
+"variable_code","variable_name","display_name","category","metadata_status","official_tcode","effective_tcode","observed","obs_ratio","standard_deviation","selected"
+"RPI","Real Personal Income","Real Personal Income [RPI]","Output and Income","Mapped",5,5,360,1,0.00659162131320847,TRUE
+"W875RX1","Real Personal Income Excluding Transfer Receipts","Real Personal Income Excluding Transfer Receipts [W875RX1]","Output and Income","Mapped",5,5,360,1,0.00697820241686574,TRUE
+"DPCERA3M086SBEA","Real Personal Consumption Expenditures","Real Personal Consumption Expenditures [DPCERA3M086SBEA]","Consumption, Orders, and Inventories","Mapped",5,5,360,1,0.00369414057806071,TRUE
+"CMRMTSPLx","Real Manufacturing and Trade Industries Sales","Real Manufacturing and Trade Industries Sales [CMRMTSPLx]","Consumption, Orders, and Inventories","Mapped",5,5,360,1,0.0081087506822037,TRUE
+"RETAILx","Retail and Food Services Sales","Retail and Food Services Sales [RETAILx]","Consumption, Orders, and Inventories","Mapped",5,5,360,1,0.00979490888740902,TRUE
+"INDPRO","Industrial Production Index","Industrial Production Index [INDPRO]","Output and Income","Mapped",5,5,360,1,0.00620526544275397,TRUE
+"IPFPNSS","Industrial Production: Final Products and Nonindustrial Supplies","Industrial Production: Final Products and Nonindustrial Supplies [IPFPNSS]","Output and Income","Mapped",5,5,360,1,0.00602856276847864,TRUE
+"IPFINAL","Industrial Production: Final Products","Industrial Production: Final Products [IPFINAL]","Output and Income","Mapped",5,5,360,1,0.00689509243451892,TRUE
+"IPCONGD","Industrial Production: Consumer Goods","Industrial Production: Consumer Goods [IPCONGD]","Output and Income","Mapped",5,5,360,1,0.00732340505631702,TRUE
+"IPDCONGD","Industrial Production: Durable Consumer Goods","Industrial Production: Durable Consumer Goods [IPDCONGD]","Output and Income","Mapped",5,5,360,1,0.0202302496357028,TRUE
+"IPNCONGD","Industrial Production: Nondurable Consumer Goods","Industrial Production: Nondurable Consumer Goods [IPNCONGD]","Output and Income","Mapped",5,5,360,1,0.00685676844377165,TRUE
+"IPBUSEQ","Industrial Production: Business Equipment","Industrial Production: Business Equipment [IPBUSEQ]","Output and Income","Mapped",5,5,360,1,0.0114037995014364,TRUE
+"IPMAT","Industrial Production: Materials","Industrial Production: Materials [IPMAT]","Output and Income","Mapped",5,5,360,1,0.00780579973004975,TRUE
+"IPDMAT","Industrial Production: Durable Materials","Industrial Production: Durable Materials [IPDMAT]","Output and Income","Mapped",5,5,360,1,0.0106948335971038,TRUE
+"IPNMAT","Industrial Production: Nondurable Materials","Industrial Production: Nondurable Materials [IPNMAT]","Output and Income","Mapped",5,5,360,1,0.0104883687171354,TRUE
+"IPMANSICS","Industrial Production: Manufacturing","Industrial Production: Manufacturing [IPMANSICS]","Output and Income","Mapped",5,5,360,1,0.00672972036123838,TRUE
+"IPB51222S","Industrial Production: Residential Utilities","Industrial Production: Residential Utilities [IPB51222S]","Output and Income","Mapped",5,5,360,1,0.0399805611183551,TRUE
+"IPFUELS","Industrial Production: Fuels","Industrial Production: Fuels [IPFUELS]","Output and Income","Mapped",5,5,360,1,0.0183383796076987,TRUE
+"CUMFNS","Capacity Utilization: Manufacturing","Capacity Utilization: Manufacturing [CUMFNS]","Output and Income","Mapped",2,2,360,1,0.492641584303315,TRUE
+"HWI","Help-Wanted Index","Help-Wanted Index [HWI]","Labor Market","Mapped",2,2,360,1,195.732448579184,TRUE
+"HWIURATIO","Help-Wanted Index to Unemployed Ratio","Help-Wanted Index to Unemployed Ratio [HWIURATIO]","Labor Market","Mapped",2,2,360,1,0.0302424864254395,TRUE
+"CLF16OV","Civilian Labor Force","Civilian Labor Force [CLF16OV]","Labor Market","Mapped",5,5,360,1,0.00219430808208572,TRUE
+"CE16OV","Civilian Employment","Civilian Employment [CE16OV]","Labor Market","Mapped",5,5,360,1,0.00245129153999006,TRUE
+"UNRATE","Civilian Unemployment Rate","Civilian Unemployment Rate [UNRATE]","Labor Market","Mapped",2,2,360,1,0.154711420541375,TRUE
+"UEMPMEAN","Average Duration of Unemployment","Average Duration of Unemployment [UEMPMEAN]","Labor Market","Mapped",2,2,360,1,0.667682605659561,TRUE
+"UEMPLT5","Unemployed Less Than 5 Weeks","Unemployed Less Than 5 Weeks [UEMPLT5]","Labor Market","Mapped",5,5,360,1,0.0580205869051614,TRUE
+"UEMP5TO14","Unemployed 5 to 14 Weeks","Unemployed 5 to 14 Weeks [UEMP5TO14]","Labor Market","Mapped",5,5,360,1,0.0507924769542987,TRUE
+"UEMP15OV","Unemployed 15 Weeks and Over","Unemployed 15 Weeks and Over [UEMP15OV]","Labor Market","Mapped",5,5,360,1,0.045870276247465,TRUE
+"UEMP15T26","Unemployed 15 to 26 Weeks","Unemployed 15 to 26 Weeks [UEMP15T26]","Labor Market","Mapped",5,5,360,1,0.0709739179701518,TRUE
+"UEMP27OV","Unemployed 27 Weeks and Over","Unemployed 27 Weeks and Over [UEMP27OV]","Labor Market","Mapped",5,5,360,1,0.0573065875187135,TRUE
+"CLAIMSx","Initial Unemployment Insurance Claims","Initial Unemployment Insurance Claims [CLAIMSx]","Labor Market","Mapped",5,5,360,1,0.0410198029371312,TRUE
+"PAYEMS","Total Nonfarm Payroll Employment","Total Nonfarm Payroll Employment [PAYEMS]","Labor Market","Mapped",5,5,360,1,0.00161001064082258,TRUE
+"USGOOD","Goods-Producing Employment","Goods-Producing Employment [USGOOD]","Labor Market","Mapped",5,5,360,1,0.00362329294013225,TRUE
+"CES1021000001","Mining and Logging Employment","Mining and Logging Employment [CES1021000001]","Labor Market","Mapped",5,5,360,1,0.00842687356112211,TRUE
+"USCONS","Construction Employment","Construction Employment [USCONS]","Labor Market","Mapped",5,5,360,1,0.00623760465944732,TRUE
+"MANEMP","Manufacturing Employment","Manufacturing Employment [MANEMP]","Labor Market","Mapped",5,5,360,1,0.00332806066019861,TRUE
+"DMANEMP","Durable Goods Manufacturing Employment","Durable Goods Manufacturing Employment [DMANEMP]","Labor Market","Mapped",5,5,360,1,0.00428382778525287,TRUE
+"NDMANEMP","Nondurable Goods Manufacturing Employment","Nondurable Goods Manufacturing Employment [NDMANEMP]","Labor Market","Mapped",5,5,360,1,0.00242018373468508,TRUE
+"SRVPRD","Service-Providing Employment","Service-Providing Employment [SRVPRD]","Labor Market","Mapped",5,5,360,1,0.00138038024429305,TRUE
+"USTPU","Trade, Transportation, and Utilities Employment","Trade, Transportation, and Utilities Employment [USTPU]","Labor Market","Mapped",5,5,360,1,0.00207173264121502,TRUE
+"USWTRADE","Wholesale Trade Employment","Wholesale Trade Employment [USWTRADE]","Labor Market","Mapped",5,5,360,1,0.00218725904676622,TRUE
+"USTRADE","Retail Trade Employment","Retail Trade Employment [USTRADE]","Labor Market","Mapped",5,5,360,1,0.00234001045524288,TRUE
+"USFIRE","Financial Activities Employment","Financial Activities Employment [USFIRE]","Labor Market","Mapped",5,5,360,1,0.00181567941222115,TRUE
+"USGOVT","Government Employment","Government Employment [USGOVT]","Labor Market","Mapped",5,5,360,1,0.00244229714542754,TRUE
+"CES0600000007","Average Weekly Hours: Goods-Producing","Average Weekly Hours: Goods-Producing [CES0600000007]","Labor Market","Mapped",1,1,360,1,0.564178819734997,TRUE
+"AWOTMAN","Average Weekly Overtime Hours: Manufacturing","Average Weekly Overtime Hours: Manufacturing [AWOTMAN]","Labor Market","Mapped",2,2,360,1,0.115742793750491,TRUE
+"AWHMAN","Average Weekly Hours: Manufacturing","Average Weekly Hours: Manufacturing [AWHMAN]","Labor Market","Mapped",1,1,360,1,0.590245622405978,TRUE
+"HOUST","Housing Starts: Total","Housing Starts: Total [HOUST]","Housing","Mapped",4,4,360,1,0.352612704822697,TRUE
+"HOUSTNE","Housing Starts: Northeast","Housing Starts: Northeast [HOUSTNE]","Housing","Mapped",4,4,360,1,0.349801205387405,TRUE
+"HOUSTMW","Housing Starts: Midwest","Housing Starts: Midwest [HOUSTMW]","Housing","Mapped",4,4,360,1,0.450658631599258,TRUE
+"HOUSTS","Housing Starts: South","Housing Starts: South [HOUSTS]","Housing","Mapped",4,4,360,1,0.332482469874441,TRUE
+"HOUSTW","Housing Starts: West","Housing Starts: West [HOUSTW]","Housing","Mapped",4,4,360,1,0.416861811969524,TRUE
+"PERMIT","Housing Permits: Total","Housing Permits: Total [PERMIT]","Housing","Mapped",4,4,360,1,0.348335857131498,TRUE
+"PERMITNE","Housing Permits: Northeast","Housing Permits: Northeast [PERMITNE]","Housing","Mapped",4,4,360,1,0.336596213941603,TRUE
+"PERMITMW","Housing Permits: Midwest","Housing Permits: Midwest [PERMITMW]","Housing","Mapped",4,4,360,1,0.413635415457579,TRUE
+"PERMITS","Housing Permits: South","Housing Permits: South [PERMITS]","Housing","Mapped",4,4,360,1,0.334397050502733,TRUE
+"PERMITW","Housing Permits: West","Housing Permits: West [PERMITW]","Housing","Mapped",4,4,360,1,0.414701957201751,TRUE
+"ACOGNO","New Orders: Consumer Goods","New Orders: Consumer Goods [ACOGNO]","Consumption, Orders, and Inventories","Mapped",5,5,310,0.861,0.0184204206755361,FALSE
+"AMDMNOx","New Orders: Durable Goods","New Orders: Durable Goods [AMDMNOx]","Consumption, Orders, and Inventories","Mapped",5,5,360,1,0.0432652056007475,TRUE
+"ANDENOx","New Orders: Nondefense Capital Goods","New Orders: Nondefense Capital Goods [ANDENOx]","Consumption, Orders, and Inventories","Mapped",5,5,360,1,0.0901117091888786,TRUE
+"AMDMUOx","Unfilled Orders: Durable Goods","Unfilled Orders: Durable Goods [AMDMUOx]","Consumption, Orders, and Inventories","Mapped",5,5,360,1,0.00963616332077478,TRUE
+"BUSINVx","Total Business Inventories","Total Business Inventories [BUSINVx]","Consumption, Orders, and Inventories","Mapped",5,5,360,1,0.00488132141487833,TRUE
+"ISRATIOx","Business Inventories-to-Sales Ratio","Business Inventories-to-Sales Ratio [ISRATIOx]","Consumption, Orders, and Inventories","Mapped",2,2,360,1,0.014327096450154,TRUE
+"M1SL","M1 Money Stock","M1 Money Stock [M1SL]","Money and Credit","Mapped",6,6,360,1,0.0119069213033152,TRUE
+"M2SL","M2 Money Stock","M2 Money Stock [M2SL]","Money and Credit","Mapped",6,6,360,1,0.00380436939917253,TRUE
+"M2REAL","Real M2 Money Stock","Real M2 Money Stock [M2REAL]","Money and Credit","Mapped",5,5,360,1,0.00452974804142363,TRUE
+"BOGMBASE","Monetary Base","Monetary Base [BOGMBASE]","Money and Credit","Mapped",6,6,360,1,0.023809307356442,TRUE
+"TOTRESNS","Total Reserves of Depository Institutions","Total Reserves of Depository Institutions [TOTRESNS]","Money and Credit","Mapped",6,6,360,1,0.0840806533232552,TRUE
+"NONBORRES","Nonborrowed Reserves of Depository Institutions","Nonborrowed Reserves of Depository Institutions [NONBORRES]","Money and Credit","Mapped",7,7,360,1,1.43811945276581,TRUE
+"BUSLOANS","Commercial and Industrial Loans","Commercial and Industrial Loans [BUSLOANS]","Money and Credit","Mapped",6,6,360,1,0.0064237995380404,TRUE
+"REALLN","Real Estate Loans","Real Estate Loans [REALLN]","Money and Credit","Mapped",6,6,360,1,0.00628674509697839,TRUE
+"NONREVSL","Nonrevolving Consumer Credit","Nonrevolving Consumer Credit [NONREVSL]","Money and Credit","Mapped",6,6,360,1,0.00764573932396314,TRUE
+"CONSPI","Nonrevolving Consumer Credit to Personal Income","Nonrevolving Consumer Credit to Personal Income [CONSPI]","Money and Credit","Mapped",2,2,360,1,1.09782830558971,TRUE
+"S&P 500","S&P 500 Index","S&P 500 Index [S&P 500]","Stock Market","Mapped",5,5,360,1,0.0347222985170437,TRUE
+"S&P div yield","S&P 500 Dividend Yield","S&P 500 Dividend Yield [S&P div yield]","Stock Market","Mapped",2,2,360,1,0.081873892253341,TRUE
+"S&P PE ratio","S&P 500 Price-Earnings Ratio","S&P 500 Price-Earnings Ratio [S&P PE ratio]","Stock Market","Mapped",5,5,360,1,0.0508015285659532,TRUE
+"FEDFUNDS","Effective Federal Funds Rate","Effective Federal Funds Rate [FEDFUNDS]","Interest and Exchange Rates","Mapped",2,2,360,1,0.179783112825071,TRUE
+"CP3Mx","3-Month AA Financial Commercial Paper Rate","3-Month AA Financial Commercial Paper Rate [CP3Mx]","Interest and Exchange Rates","Mapped",2,2,360,1,0.211830811342117,TRUE
+"TB3MS","3-Month Treasury Bill Rate","3-Month Treasury Bill Rate [TB3MS]","Interest and Exchange Rates","Mapped",2,2,360,1,0.184039273509075,TRUE
+"TB6MS","6-Month Treasury Bill Rate","6-Month Treasury Bill Rate [TB6MS]","Interest and Exchange Rates","Mapped",2,2,360,1,0.184415643388684,TRUE
+"GS1","1-Year Treasury Yield","1-Year Treasury Yield [GS1]","Interest and Exchange Rates","Mapped",2,2,360,1,0.20830785545232,TRUE
+"GS5","5-Year Treasury Yield","5-Year Treasury Yield [GS5]","Interest and Exchange Rates","Mapped",2,2,360,1,0.24033691242987,TRUE
+"GS10","10-Year Treasury Yield","10-Year Treasury Yield [GS10]","Interest and Exchange Rates","Mapped",2,2,360,1,0.222191330064157,TRUE
+"AAA","Moody's Seasoned Aaa Corporate Bond Yield","Moody's Seasoned Aaa Corporate Bond Yield [AAA]","Interest and Exchange Rates","Mapped",2,2,360,1,0.175879801953994,TRUE
+"BAA","Moody's Seasoned Baa Corporate Bond Yield","Moody's Seasoned Baa Corporate Bond Yield [BAA]","Interest and Exchange Rates","Mapped",2,2,360,1,0.198132317395557,TRUE
+"COMPAPFFx","Commercial Paper Rate Minus Federal Funds Rate","Commercial Paper Rate Minus Federal Funds Rate [COMPAPFFx]","Interest and Exchange Rates","Mapped",1,1,360,1,0.242983810165361,TRUE
+"TB3SMFFM","3-Month Treasury Bill Minus Federal Funds Rate","3-Month Treasury Bill Minus Federal Funds Rate [TB3SMFFM]","Interest and Exchange Rates","Mapped",1,1,360,1,0.326351712522198,TRUE
+"TB6SMFFM","6-Month Treasury Bill Minus Federal Funds Rate","6-Month Treasury Bill Minus Federal Funds Rate [TB6SMFFM]","Interest and Exchange Rates","Mapped",1,1,360,1,0.375523997875637,TRUE
+"T1YFFM","1-Year Treasury Yield Minus Federal Funds Rate","1-Year Treasury Yield Minus Federal Funds Rate [T1YFFM]","Interest and Exchange Rates","Mapped",1,1,360,1,0.421709259228555,TRUE
+"T5YFFM","5-Year Treasury Yield Minus Federal Funds Rate","5-Year Treasury Yield Minus Federal Funds Rate [T5YFFM]","Interest and Exchange Rates","Mapped",1,1,360,1,0.984176007297233,TRUE
+"T10YFFM","10-Year Treasury Yield Minus Federal Funds Rate","10-Year Treasury Yield Minus Federal Funds Rate [T10YFFM]","Interest and Exchange Rates","Mapped",1,1,360,1,1.27604465884666,TRUE
+"AAAFFM","Aaa Corporate Bond Yield Minus Federal Funds Rate","Aaa Corporate Bond Yield Minus Federal Funds Rate [AAAFFM]","Interest and Exchange Rates","Mapped",1,1,360,1,1.51566597329965,TRUE
+"BAAFFM","Baa Corporate Bond Yield Minus Federal Funds Rate","Baa Corporate Bond Yield Minus Federal Funds Rate [BAAFFM]","Interest and Exchange Rates","Mapped",1,1,360,1,1.68643161348748,TRUE
+"TWEXAFEGSMTHx","Trade-Weighted U.S. Dollar Index","Trade-Weighted U.S. Dollar Index [TWEXAFEGSMTHx]","Interest and Exchange Rates","Mapped",5,5,360,1,0.016742453190771,TRUE
+"EXSZUSx","Swiss Franc per U.S. Dollar Exchange Rate","Swiss Franc per U.S. Dollar Exchange Rate [EXSZUSx]","Interest and Exchange Rates","Mapped",5,5,360,1,0.0263078468795793,TRUE
+"EXJPUSx","Japanese Yen per U.S. Dollar Exchange Rate","Japanese Yen per U.S. Dollar Exchange Rate [EXJPUSx]","Interest and Exchange Rates","Mapped",5,5,360,1,0.0259376879945137,TRUE
+"EXUSUKx","U.S. Dollar per British Pound Exchange Rate","U.S. Dollar per British Pound Exchange Rate [EXUSUKx]","Interest and Exchange Rates","Mapped",5,5,360,1,0.0234127871709168,TRUE
+"EXCAUSx","Canadian Dollar per U.S. Dollar Exchange Rate","Canadian Dollar per U.S. Dollar Exchange Rate [EXCAUSx]","Interest and Exchange Rates","Mapped",5,5,360,1,0.0167631767606748,TRUE
+"WPSFD49207","Producer Price Index: Finished Goods","Producer Price Index: Finished Goods [WPSFD49207]","Prices","Mapped",6,6,360,1,0.00734436411489617,TRUE
+"WPSFD49502","Producer Price Index: Finished Consumer Goods","Producer Price Index: Finished Consumer Goods [WPSFD49502]","Prices","Mapped",6,6,360,1,0.00950730974936661,TRUE
+"WPSID61","Producer Price Index: Intermediate Materials","Producer Price Index: Intermediate Materials [WPSID61]","Prices","Mapped",6,6,360,1,0.00825557768355427,TRUE
+"WPSID62","Producer Price Index: Crude Materials","Producer Price Index: Crude Materials [WPSID62]","Prices","Mapped",6,6,360,1,0.0495081366347742,TRUE
+"OILPRICEx","Crude Oil Price: Spliced WTI Series","Crude Oil Price: Spliced WTI Series [OILPRICEx]","Prices","Mapped",6,6,360,1,0.0989258974383273,TRUE
+"PPICMM","Producer Price Index: Metals and Metal Products","Producer Price Index: Metals and Metal Products [PPICMM]","Prices","Mapped",6,6,360,1,0.0387968900458092,TRUE
+"CPIAUCSL","Consumer Price Index: All Items","Consumer Price Index: All Items [CPIAUCSL]","Prices","Mapped",6,5,360,1,0.00259851911964731,TRUE
+"CPIAPPSL","Consumer Price Index: Apparel","Consumer Price Index: Apparel [CPIAPPSL]","Prices","Mapped",6,6,360,1,0.00642168679137582,TRUE
+"CPITRNSL","Consumer Price Index: Transportation","Consumer Price Index: Transportation [CPITRNSL]","Prices","Mapped",6,6,360,1,0.0143195254922272,TRUE
+"CPIMEDSL","Consumer Price Index: Medical Care","Consumer Price Index: Medical Care [CPIMEDSL]","Prices","Mapped",6,6,360,1,0.00170613303020367,TRUE
+"CUSR0000SAC","Consumer Price Index: Commodities","Consumer Price Index: Commodities [CUSR0000SAC]","Prices","Mapped",6,6,360,1,0.0064371281670453,TRUE
+"CUSR0000SAD","Consumer Price Index: Durables","Consumer Price Index: Durables [CUSR0000SAD]","Prices","Mapped",6,6,360,1,0.00211000868193512,TRUE
+"CUSR0000SAS","Consumer Price Index: Services","Consumer Price Index: Services [CUSR0000SAS]","Prices","Mapped",6,6,360,1,0.00134152122104496,TRUE
+"CPIULFSL","Consumer Price Index: All Items Less Food","Consumer Price Index: All Items Less Food [CPIULFSL]","Prices","Mapped",6,6,360,1,0.00314571087407212,TRUE
+"CUSR0000SA0L2","Consumer Price Index: All Items Less Shelter","Consumer Price Index: All Items Less Shelter [CUSR0000SA0L2]","Prices","Mapped",6,6,360,1,0.00399232997336152,TRUE
+"CUSR0000SA0L5","Consumer Price Index: All Items Less Medical Care","Consumer Price Index: All Items Less Medical Care [CUSR0000SA0L5]","Prices","Mapped",6,6,360,1,0.00295487815325973,TRUE
+"PCEPI","Personal Consumption Expenditures Price Index","Personal Consumption Expenditures Price Index [PCEPI]","Prices","Mapped",6,6,360,1,0.00204674597170679,TRUE
+"DDURRG3M086SBEA","PCE Price Index: Durable Goods","PCE Price Index: Durable Goods [DDURRG3M086SBEA]","Prices","Mapped",6,6,360,1,0.0029270505188891,TRUE
+"DNDGRG3M086SBEA","PCE Price Index: Nondurable Goods","PCE Price Index: Nondurable Goods [DNDGRG3M086SBEA]","Prices","Mapped",6,6,360,1,0.00751330399136914,TRUE
+"DSERRG3M086SBEA","PCE Price Index: Services","PCE Price Index: Services [DSERRG3M086SBEA]","Prices","Mapped",6,6,360,1,0.00163116653144639,TRUE
+"CES0600000008","Average Hourly Earnings: Goods-Producing","Average Hourly Earnings: Goods-Producing [CES0600000008]","Labor Market","Mapped",6,6,360,1,0.0029137432500208,TRUE
+"CES2000000008","Average Hourly Earnings: Construction","Average Hourly Earnings: Construction [CES2000000008]","Labor Market","Mapped",6,6,360,1,0.00634390741567816,TRUE
+"CES3000000008","Average Hourly Earnings: Manufacturing","Average Hourly Earnings: Manufacturing [CES3000000008]","Labor Market","Mapped",6,6,360,1,0.00328391174561161,TRUE
+"UMCSENTx","University of Michigan Consumer Sentiment","University of Michigan Consumer Sentiment [UMCSENTx]","Consumption, Orders, and Inventories","Mapped",2,2,360,1,3.96219599933033,TRUE
+"DTCOLNVHFNM","Consumer Motor Vehicle Loans Outstanding","Consumer Motor Vehicle Loans Outstanding [DTCOLNVHFNM]","Money and Credit","Mapped",6,6,360,1,0.0290066854504197,TRUE
+"DTCTHFNM","Total Consumer Loans and Leases Outstanding","Total Consumer Loans and Leases Outstanding [DTCTHFNM]","Money and Credit","Mapped",6,6,360,1,0.0260124396495797,TRUE
+"INVEST","Securities in Bank Credit at Commercial Banks","Securities in Bank Credit at Commercial Banks [INVEST]","Money and Credit","Mapped",6,6,360,1,0.0112182106611684,TRUE
+"VIXCLSx","CBOE Volatility Index (VIX)","CBOE Volatility Index (VIX) [VIXCLSx]","Stock Market","Mapped",1,1,360,1,8.05044421047009,TRUE

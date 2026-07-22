@@ -1,0 +1,153 @@
+"target_code","horizon","target_name","model","model_family","winner_windows_fractional","winner_window_appearances","total_windows","winner_frequency_fractional","winner_appearance_rate"
+"CPIAUCSL",1,"Consumer Price Index: All Items [CPIAUCSL]","RandomForest","Tree",19,19,77,0.246753246753247,0.246753246753247
+"CPIAUCSL",1,"Consumer Price Index: All Items [CPIAUCSL]","RW","Baseline",13,13,77,0.168831168831169,0.168831168831169
+"CPIAUCSL",1,"Consumer Price Index: All Items [CPIAUCSL]","BorutaRF","FeatureSelection+Tree",12,12,77,0.155844155844156,0.155844155844156
+"CPIAUCSL",1,"Consumer Price Index: All Items [CPIAUCSL]","Ridge","Regularization",12,12,77,0.155844155844156,0.155844155844156
+"CPIAUCSL",1,"Consumer Price Index: All Items [CPIAUCSL]","LASSO","Regularization",9,9,77,0.116883116883117,0.116883116883117
+"CPIAUCSL",1,"Consumer Price Index: All Items [CPIAUCSL]","Factor","Factor",5,5,77,0.0649350649350649,0.0649350649350649
+"CPIAUCSL",1,"Consumer Price Index: All Items [CPIAUCSL]","XGBoost","Boosting",4,4,77,0.051948051948052,0.051948051948052
+"CPIAUCSL",1,"Consumer Price Index: All Items [CPIAUCSL]","AR(4)","Baseline",3,3,77,0.038961038961039,0.038961038961039
+"CPIAUCSL",3,"Consumer Price Index: All Items [CPIAUCSL]","RandomForest","Tree",17,17,77,0.220779220779221,0.220779220779221
+"CPIAUCSL",3,"Consumer Price Index: All Items [CPIAUCSL]","RW","Baseline",15,15,77,0.194805194805195,0.194805194805195
+"CPIAUCSL",3,"Consumer Price Index: All Items [CPIAUCSL]","AR(4)","Baseline",14,14,77,0.181818181818182,0.181818181818182
+"CPIAUCSL",3,"Consumer Price Index: All Items [CPIAUCSL]","Factor","Factor",12,12,77,0.155844155844156,0.155844155844156
+"CPIAUCSL",3,"Consumer Price Index: All Items [CPIAUCSL]","BorutaRF","FeatureSelection+Tree",9,9,77,0.116883116883117,0.116883116883117
+"CPIAUCSL",3,"Consumer Price Index: All Items [CPIAUCSL]","LASSO","Regularization",7,7,77,0.0909090909090909,0.0909090909090909
+"CPIAUCSL",3,"Consumer Price Index: All Items [CPIAUCSL]","XGBoost","Boosting",2,2,77,0.025974025974026,0.025974025974026
+"CPIAUCSL",3,"Consumer Price Index: All Items [CPIAUCSL]","Ensemble_Mean","Ensemble",1,1,77,0.012987012987013,0.012987012987013
+"CPIAUCSL",6,"Consumer Price Index: All Items [CPIAUCSL]","RW","Baseline",13,13,77,0.168831168831169,0.168831168831169
+"CPIAUCSL",6,"Consumer Price Index: All Items [CPIAUCSL]","RandomForest","Tree",12,12,77,0.155844155844156,0.155844155844156
+"CPIAUCSL",6,"Consumer Price Index: All Items [CPIAUCSL]","Ridge","Regularization",12,12,77,0.155844155844156,0.155844155844156
+"CPIAUCSL",6,"Consumer Price Index: All Items [CPIAUCSL]","AR(4)","Baseline",10,10,77,0.12987012987013,0.12987012987013
+"CPIAUCSL",6,"Consumer Price Index: All Items [CPIAUCSL]","BorutaRF","FeatureSelection+Tree",10,10,77,0.12987012987013,0.12987012987013
+"CPIAUCSL",6,"Consumer Price Index: All Items [CPIAUCSL]","ElasticNet","Regularization",8,8,77,0.103896103896104,0.103896103896104
+"CPIAUCSL",6,"Consumer Price Index: All Items [CPIAUCSL]","Ensemble_Mean","Ensemble",6,6,77,0.0779220779220779,0.0779220779220779
+"CPIAUCSL",6,"Consumer Price Index: All Items [CPIAUCSL]","Ensemble_Median","Ensemble",3,3,77,0.038961038961039,0.038961038961039
+"CPIAUCSL",6,"Consumer Price Index: All Items [CPIAUCSL]","Factor","Factor",3,3,77,0.038961038961039,0.038961038961039
+"CPIAUCSL",12,"Consumer Price Index: All Items [CPIAUCSL]","AR(4)","Baseline",27,27,77,0.350649350649351,0.350649350649351
+"CPIAUCSL",12,"Consumer Price Index: All Items [CPIAUCSL]","RW","Baseline",11,11,77,0.142857142857143,0.142857142857143
+"CPIAUCSL",12,"Consumer Price Index: All Items [CPIAUCSL]","Ensemble_Median","Ensemble",8,8,77,0.103896103896104,0.103896103896104
+"CPIAUCSL",12,"Consumer Price Index: All Items [CPIAUCSL]","Factor","Factor",7,7,77,0.0909090909090909,0.0909090909090909
+"CPIAUCSL",12,"Consumer Price Index: All Items [CPIAUCSL]","Ridge","Regularization",6,6,77,0.0779220779220779,0.0779220779220779
+"CPIAUCSL",12,"Consumer Price Index: All Items [CPIAUCSL]","ElasticNet","Regularization",5.5,7,77,0.0714285714285714,0.0909090909090909
+"CPIAUCSL",12,"Consumer Price Index: All Items [CPIAUCSL]","Ensemble_Mean","Ensemble",4,4,77,0.051948051948052,0.051948051948052
+"CPIAUCSL",12,"Consumer Price Index: All Items [CPIAUCSL]","RandomForest","Tree",3,3,77,0.038961038961039,0.038961038961039
+"CPIAUCSL",12,"Consumer Price Index: All Items [CPIAUCSL]","LASSO","Regularization",2.5,4,77,0.0324675324675325,0.051948051948052
+"CPIAUCSL",12,"Consumer Price Index: All Items [CPIAUCSL]","XGBoost","Boosting",2,2,77,0.025974025974026,0.025974025974026
+"CPIAUCSL",12,"Consumer Price Index: All Items [CPIAUCSL]","BorutaRF","FeatureSelection+Tree",1,1,77,0.012987012987013,0.012987012987013
+"INDPRO",1,"Industrial Production Index [INDPRO]","XGBoost","Boosting",21,21,79,0.265822784810127,0.265822784810127
+"INDPRO",1,"Industrial Production Index [INDPRO]","BorutaRF","FeatureSelection+Tree",16,16,79,0.20253164556962,0.20253164556962
+"INDPRO",1,"Industrial Production Index [INDPRO]","AR(4)","Baseline",10,10,79,0.126582278481013,0.126582278481013
+"INDPRO",1,"Industrial Production Index [INDPRO]","Factor","Factor",10,10,79,0.126582278481013,0.126582278481013
+"INDPRO",1,"Industrial Production Index [INDPRO]","LASSO","Regularization",10,10,79,0.126582278481013,0.126582278481013
+"INDPRO",1,"Industrial Production Index [INDPRO]","ElasticNet","Regularization",7,7,79,0.0886075949367089,0.0886075949367089
+"INDPRO",1,"Industrial Production Index [INDPRO]","Ensemble_Median","Ensemble",3,3,79,0.0379746835443038,0.0379746835443038
+"INDPRO",1,"Industrial Production Index [INDPRO]","RandomForest","Tree",1,1,79,0.0126582278481013,0.0126582278481013
+"INDPRO",1,"Industrial Production Index [INDPRO]","RW","Baseline",1,1,79,0.0126582278481013,0.0126582278481013
+"INDPRO",3,"Industrial Production Index [INDPRO]","AR(4)","Baseline",24,24,79,0.30379746835443,0.30379746835443
+"INDPRO",3,"Industrial Production Index [INDPRO]","XGBoost","Boosting",23,23,79,0.291139240506329,0.291139240506329
+"INDPRO",3,"Industrial Production Index [INDPRO]","BorutaRF","FeatureSelection+Tree",10,10,79,0.126582278481013,0.126582278481013
+"INDPRO",3,"Industrial Production Index [INDPRO]","RW","Baseline",7,7,79,0.0886075949367089,0.0886075949367089
+"INDPRO",3,"Industrial Production Index [INDPRO]","LASSO","Regularization",6,6,79,0.0759493670886076,0.0759493670886076
+"INDPRO",3,"Industrial Production Index [INDPRO]","ElasticNet","Regularization",4,4,79,0.0506329113924051,0.0506329113924051
+"INDPRO",3,"Industrial Production Index [INDPRO]","Ensemble_Mean","Ensemble",3,3,79,0.0379746835443038,0.0379746835443038
+"INDPRO",3,"Industrial Production Index [INDPRO]","Ensemble_InvRMSE","Ensemble",2,2,79,0.0253164556962025,0.0253164556962025
+"INDPRO",6,"Industrial Production Index [INDPRO]","AR(4)","Baseline",16,16,79,0.20253164556962,0.20253164556962
+"INDPRO",6,"Industrial Production Index [INDPRO]","RW","Baseline",15,15,79,0.189873417721519,0.189873417721519
+"INDPRO",6,"Industrial Production Index [INDPRO]","Ridge","Regularization",12,12,79,0.151898734177215,0.151898734177215
+"INDPRO",6,"Industrial Production Index [INDPRO]","Ensemble_InvRMSE","Ensemble",7,7,79,0.0886075949367089,0.0886075949367089
+"INDPRO",6,"Industrial Production Index [INDPRO]","Ensemble_Mean","Ensemble",7,7,79,0.0886075949367089,0.0886075949367089
+"INDPRO",6,"Industrial Production Index [INDPRO]","XGBoost","Boosting",7,7,79,0.0886075949367089,0.0886075949367089
+"INDPRO",6,"Industrial Production Index [INDPRO]","Ensemble_Median","Ensemble",5,5,79,0.0632911392405063,0.0632911392405063
+"INDPRO",6,"Industrial Production Index [INDPRO]","BorutaRF","FeatureSelection+Tree",4,4,79,0.0506329113924051,0.0506329113924051
+"INDPRO",6,"Industrial Production Index [INDPRO]","ElasticNet","Regularization",2,2,79,0.0253164556962025,0.0253164556962025
+"INDPRO",6,"Industrial Production Index [INDPRO]","Factor","Factor",2,2,79,0.0253164556962025,0.0253164556962025
+"INDPRO",6,"Industrial Production Index [INDPRO]","RandomForest","Tree",2,2,79,0.0253164556962025,0.0253164556962025
+"INDPRO",12,"Industrial Production Index [INDPRO]","XGBoost","Boosting",25,25,79,0.316455696202532,0.316455696202532
+"INDPRO",12,"Industrial Production Index [INDPRO]","RW","Baseline",12,12,79,0.151898734177215,0.151898734177215
+"INDPRO",12,"Industrial Production Index [INDPRO]","Ensemble_InvRMSE","Ensemble",9,9,79,0.113924050632911,0.113924050632911
+"INDPRO",12,"Industrial Production Index [INDPRO]","Ensemble_Mean","Ensemble",8,8,79,0.10126582278481,0.10126582278481
+"INDPRO",12,"Industrial Production Index [INDPRO]","Factor","Factor",7,7,79,0.0886075949367089,0.0886075949367089
+"INDPRO",12,"Industrial Production Index [INDPRO]","RandomForest","Tree",5,5,79,0.0632911392405063,0.0632911392405063
+"INDPRO",12,"Industrial Production Index [INDPRO]","AR(4)","Baseline",4,4,79,0.0506329113924051,0.0506329113924051
+"INDPRO",12,"Industrial Production Index [INDPRO]","ElasticNet","Regularization",3,6,79,0.0379746835443038,0.0759493670886076
+"INDPRO",12,"Industrial Production Index [INDPRO]","LASSO","Regularization",3,6,79,0.0379746835443038,0.0759493670886076
+"INDPRO",12,"Industrial Production Index [INDPRO]","Ridge","Regularization",2,2,79,0.0253164556962025,0.0253164556962025
+"INDPRO",12,"Industrial Production Index [INDPRO]","BorutaRF","FeatureSelection+Tree",1,1,79,0.0126582278481013,0.0126582278481013
+"PCEPI",1,"Personal Consumption Expenditures Price Index [PCEPI]","BorutaRF","FeatureSelection+Tree",24,24,79,0.30379746835443,0.30379746835443
+"PCEPI",1,"Personal Consumption Expenditures Price Index [PCEPI]","RW","Baseline",17,17,79,0.215189873417722,0.215189873417722
+"PCEPI",1,"Personal Consumption Expenditures Price Index [PCEPI]","XGBoost","Boosting",17,17,79,0.215189873417722,0.215189873417722
+"PCEPI",1,"Personal Consumption Expenditures Price Index [PCEPI]","RandomForest","Tree",11,11,79,0.139240506329114,0.139240506329114
+"PCEPI",1,"Personal Consumption Expenditures Price Index [PCEPI]","Ridge","Regularization",5,5,79,0.0632911392405063,0.0632911392405063
+"PCEPI",1,"Personal Consumption Expenditures Price Index [PCEPI]","LASSO","Regularization",2,2,79,0.0253164556962025,0.0253164556962025
+"PCEPI",1,"Personal Consumption Expenditures Price Index [PCEPI]","AR(4)","Baseline",1,1,79,0.0126582278481013,0.0126582278481013
+"PCEPI",1,"Personal Consumption Expenditures Price Index [PCEPI]","ElasticNet","Regularization",1,1,79,0.0126582278481013,0.0126582278481013
+"PCEPI",1,"Personal Consumption Expenditures Price Index [PCEPI]","Ensemble_InvRMSE","Ensemble",1,1,79,0.0126582278481013,0.0126582278481013
+"PCEPI",3,"Personal Consumption Expenditures Price Index [PCEPI]","BorutaRF","FeatureSelection+Tree",35,35,79,0.443037974683544,0.443037974683544
+"PCEPI",3,"Personal Consumption Expenditures Price Index [PCEPI]","RW","Baseline",17,17,79,0.215189873417722,0.215189873417722
+"PCEPI",3,"Personal Consumption Expenditures Price Index [PCEPI]","AR(4)","Baseline",10,10,79,0.126582278481013,0.126582278481013
+"PCEPI",3,"Personal Consumption Expenditures Price Index [PCEPI]","RandomForest","Tree",8,8,79,0.10126582278481,0.10126582278481
+"PCEPI",3,"Personal Consumption Expenditures Price Index [PCEPI]","Factor","Factor",5,5,79,0.0632911392405063,0.0632911392405063
+"PCEPI",3,"Personal Consumption Expenditures Price Index [PCEPI]","ElasticNet","Regularization",2,2,79,0.0253164556962025,0.0253164556962025
+"PCEPI",3,"Personal Consumption Expenditures Price Index [PCEPI]","XGBoost","Boosting",2,2,79,0.0253164556962025,0.0253164556962025
+"PCEPI",6,"Personal Consumption Expenditures Price Index [PCEPI]","BorutaRF","FeatureSelection+Tree",17,17,79,0.215189873417722,0.215189873417722
+"PCEPI",6,"Personal Consumption Expenditures Price Index [PCEPI]","RW","Baseline",13,13,79,0.164556962025316,0.164556962025316
+"PCEPI",6,"Personal Consumption Expenditures Price Index [PCEPI]","RandomForest","Tree",10,10,79,0.126582278481013,0.126582278481013
+"PCEPI",6,"Personal Consumption Expenditures Price Index [PCEPI]","Factor","Factor",8,8,79,0.10126582278481,0.10126582278481
+"PCEPI",6,"Personal Consumption Expenditures Price Index [PCEPI]","Ensemble_Mean","Ensemble",7.5,8,79,0.0949367088607595,0.10126582278481
+"PCEPI",6,"Personal Consumption Expenditures Price Index [PCEPI]","LASSO","Regularization",7,7,79,0.0886075949367089,0.0886075949367089
+"PCEPI",6,"Personal Consumption Expenditures Price Index [PCEPI]","Ensemble_InvRMSE","Ensemble",3.5,4,79,0.0443037974683544,0.0506329113924051
+"PCEPI",6,"Personal Consumption Expenditures Price Index [PCEPI]","AR(4)","Baseline",3,3,79,0.0379746835443038,0.0379746835443038
+"PCEPI",6,"Personal Consumption Expenditures Price Index [PCEPI]","ElasticNet","Regularization",3,3,79,0.0379746835443038,0.0379746835443038
+"PCEPI",6,"Personal Consumption Expenditures Price Index [PCEPI]","Ridge","Regularization",3,3,79,0.0379746835443038,0.0379746835443038
+"PCEPI",6,"Personal Consumption Expenditures Price Index [PCEPI]","Ensemble_Median","Ensemble",2,2,79,0.0253164556962025,0.0253164556962025
+"PCEPI",6,"Personal Consumption Expenditures Price Index [PCEPI]","XGBoost","Boosting",2,2,79,0.0253164556962025,0.0253164556962025
+"PCEPI",12,"Personal Consumption Expenditures Price Index [PCEPI]","RandomForest","Tree",20,20,79,0.253164556962025,0.253164556962025
+"PCEPI",12,"Personal Consumption Expenditures Price Index [PCEPI]","BorutaRF","FeatureSelection+Tree",18,18,79,0.227848101265823,0.227848101265823
+"PCEPI",12,"Personal Consumption Expenditures Price Index [PCEPI]","AR(4)","Baseline",13,13,79,0.164556962025316,0.164556962025316
+"PCEPI",12,"Personal Consumption Expenditures Price Index [PCEPI]","RW","Baseline",12,12,79,0.151898734177215,0.151898734177215
+"PCEPI",12,"Personal Consumption Expenditures Price Index [PCEPI]","Ensemble_Mean","Ensemble",8,8,79,0.10126582278481,0.10126582278481
+"PCEPI",12,"Personal Consumption Expenditures Price Index [PCEPI]","ElasticNet","Regularization",2,2,79,0.0253164556962025,0.0253164556962025
+"PCEPI",12,"Personal Consumption Expenditures Price Index [PCEPI]","Ridge","Regularization",2,2,79,0.0253164556962025,0.0253164556962025
+"PCEPI",12,"Personal Consumption Expenditures Price Index [PCEPI]","XGBoost","Boosting",2,2,79,0.0253164556962025,0.0253164556962025
+"PCEPI",12,"Personal Consumption Expenditures Price Index [PCEPI]","Ensemble_InvRMSE","Ensemble",1,1,79,0.0126582278481013,0.0126582278481013
+"PCEPI",12,"Personal Consumption Expenditures Price Index [PCEPI]","LASSO","Regularization",1,1,79,0.0126582278481013,0.0126582278481013
+"UNRATE",1,"Civilian Unemployment Rate [UNRATE]","XGBoost","Boosting",19,19,77,0.246753246753247,0.246753246753247
+"UNRATE",1,"Civilian Unemployment Rate [UNRATE]","RandomForest","Tree",15,15,77,0.194805194805195,0.194805194805195
+"UNRATE",1,"Civilian Unemployment Rate [UNRATE]","Ensemble_InvRMSE","Ensemble",11,11,77,0.142857142857143,0.142857142857143
+"UNRATE",1,"Civilian Unemployment Rate [UNRATE]","Ridge","Regularization",10,10,77,0.12987012987013,0.12987012987013
+"UNRATE",1,"Civilian Unemployment Rate [UNRATE]","AR(4)","Baseline",9,9,77,0.116883116883117,0.116883116883117
+"UNRATE",1,"Civilian Unemployment Rate [UNRATE]","Ensemble_Median","Ensemble",5,5,77,0.0649350649350649,0.0649350649350649
+"UNRATE",1,"Civilian Unemployment Rate [UNRATE]","ElasticNet","Regularization",3,3,77,0.038961038961039,0.038961038961039
+"UNRATE",1,"Civilian Unemployment Rate [UNRATE]","RW","Baseline",3,3,77,0.038961038961039,0.038961038961039
+"UNRATE",1,"Civilian Unemployment Rate [UNRATE]","Ensemble_Mean","Ensemble",2,2,77,0.025974025974026,0.025974025974026
+"UNRATE",3,"Civilian Unemployment Rate [UNRATE]","XGBoost","Boosting",19,19,77,0.246753246753247,0.246753246753247
+"UNRATE",3,"Civilian Unemployment Rate [UNRATE]","Factor","Factor",12,12,77,0.155844155844156,0.155844155844156
+"UNRATE",3,"Civilian Unemployment Rate [UNRATE]","ElasticNet","Regularization",10,10,77,0.12987012987013,0.12987012987013
+"UNRATE",3,"Civilian Unemployment Rate [UNRATE]","BorutaRF","FeatureSelection+Tree",9,9,77,0.116883116883117,0.116883116883117
+"UNRATE",3,"Civilian Unemployment Rate [UNRATE]","AR(4)","Baseline",6,6,77,0.0779220779220779,0.0779220779220779
+"UNRATE",3,"Civilian Unemployment Rate [UNRATE]","Ridge","Regularization",6,6,77,0.0779220779220779,0.0779220779220779
+"UNRATE",3,"Civilian Unemployment Rate [UNRATE]","RandomForest","Tree",5,5,77,0.0649350649350649,0.0649350649350649
+"UNRATE",3,"Civilian Unemployment Rate [UNRATE]","Ensemble_Mean","Ensemble",4,4,77,0.051948051948052,0.051948051948052
+"UNRATE",3,"Civilian Unemployment Rate [UNRATE]","RW","Baseline",3,3,77,0.038961038961039,0.038961038961039
+"UNRATE",3,"Civilian Unemployment Rate [UNRATE]","Ensemble_Median","Ensemble",2,2,77,0.025974025974026,0.025974025974026
+"UNRATE",3,"Civilian Unemployment Rate [UNRATE]","LASSO","Regularization",1,1,77,0.012987012987013,0.012987012987013
+"UNRATE",6,"Civilian Unemployment Rate [UNRATE]","BorutaRF","FeatureSelection+Tree",18,18,77,0.233766233766234,0.233766233766234
+"UNRATE",6,"Civilian Unemployment Rate [UNRATE]","Ensemble_InvRMSE","Ensemble",14,14,77,0.181818181818182,0.181818181818182
+"UNRATE",6,"Civilian Unemployment Rate [UNRATE]","Factor","Factor",10,10,77,0.12987012987013,0.12987012987013
+"UNRATE",6,"Civilian Unemployment Rate [UNRATE]","RandomForest","Tree",8,8,77,0.103896103896104,0.103896103896104
+"UNRATE",6,"Civilian Unemployment Rate [UNRATE]","AR(4)","Baseline",6,6,77,0.0779220779220779,0.0779220779220779
+"UNRATE",6,"Civilian Unemployment Rate [UNRATE]","Ensemble_Median","Ensemble",6,6,77,0.0779220779220779,0.0779220779220779
+"UNRATE",6,"Civilian Unemployment Rate [UNRATE]","LASSO","Regularization",6,6,77,0.0779220779220779,0.0779220779220779
+"UNRATE",6,"Civilian Unemployment Rate [UNRATE]","RW","Baseline",5,5,77,0.0649350649350649,0.0649350649350649
+"UNRATE",6,"Civilian Unemployment Rate [UNRATE]","Ridge","Regularization",3,3,77,0.038961038961039,0.038961038961039
+"UNRATE",6,"Civilian Unemployment Rate [UNRATE]","Ensemble_Mean","Ensemble",1,1,77,0.012987012987013,0.012987012987013
+"UNRATE",12,"Civilian Unemployment Rate [UNRATE]","AR(4)","Baseline",20,20,77,0.25974025974026,0.25974025974026
+"UNRATE",12,"Civilian Unemployment Rate [UNRATE]","Factor","Factor",16,16,77,0.207792207792208,0.207792207792208
+"UNRATE",12,"Civilian Unemployment Rate [UNRATE]","ElasticNet","Regularization",15,15,77,0.194805194805195,0.194805194805195
+"UNRATE",12,"Civilian Unemployment Rate [UNRATE]","XGBoost","Boosting",9,9,77,0.116883116883117,0.116883116883117
+"UNRATE",12,"Civilian Unemployment Rate [UNRATE]","Ensemble_Median","Ensemble",7,7,77,0.0909090909090909,0.0909090909090909
+"UNRATE",12,"Civilian Unemployment Rate [UNRATE]","BorutaRF","FeatureSelection+Tree",4,4,77,0.051948051948052,0.051948051948052
+"UNRATE",12,"Civilian Unemployment Rate [UNRATE]","LASSO","Regularization",3,3,77,0.038961038961039,0.038961038961039
+"UNRATE",12,"Civilian Unemployment Rate [UNRATE]","Ridge","Regularization",2,2,77,0.025974025974026,0.025974025974026
+"UNRATE",12,"Civilian Unemployment Rate [UNRATE]","Ensemble_Mean","Ensemble",1,1,77,0.012987012987013,0.012987012987013

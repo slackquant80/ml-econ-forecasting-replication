@@ -1,0 +1,3 @@
+"test","window_rows","horizon","window_start","origin_date","target_date","short_gap_imputed_count","final_imputed_count","dropped_predictor_count","missing_after","em_converged","em_last_change"
+"First maximum-horizon forecast",360,12,"1988-01-01","2017-12-01","2018-12-01",0,0,0,0,TRUE,0
+"Last minimum-horizon forecast",360,1,"1996-05-01","2026-04-01","2026-05-01",56,0,0,0,TRUE,0

@@ -1,0 +1,22 @@
+# Public release checklist
+
+- [x] Development backup separated from public package
+- [x] PREVIEW/QUICK runs excluded
+- [x] `.RData`, `.Rhistory`, logs, deployment metadata, and raw source data excluded
+- [x] Internal path-bearing validation original left untouched
+- [x] Sanitized public validation copy created
+- [x] Four FULL-run CSV output sets included
+- [x] Paper table and figure-data exports included
+- [x] Manuscript PDF included
+- [x] Known local absolute paths and employer-directory strings scanned
+- [x] CSV files parsed successfully
+- [x] SHA-256 inventory generated
+- [ ] Run R syntax/package check on the release machine
+- [ ] Generate and test `renv.lock` on the release machine
+- [ ] Create private GitHub repository and push candidate
+- [ ] Review GitHub Actions result and rendered files
+- [ ] Make repository public
+- [ ] Create GitHub `v1.0.0` release
+- [ ] Archive release with Zenodo and record DOI
+- [ ] Update manuscript Data and Code Availability section
+- [ ] Produce final paper PDF v1.0 and submit to SSRN

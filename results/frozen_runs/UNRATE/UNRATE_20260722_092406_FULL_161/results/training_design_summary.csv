@@ -1,0 +1,5 @@
+"horizon","window_size_months","predictor_lags","expected_training_observations"
+1,360,4,356
+3,360,4,354
+6,360,4,351
+12,360,4,345

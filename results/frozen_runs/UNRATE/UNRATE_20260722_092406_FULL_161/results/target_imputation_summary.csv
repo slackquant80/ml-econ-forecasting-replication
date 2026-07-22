@@ -1,0 +1,2 @@
+"date","variable_code","variable_name","imputed_value","method"
+2025-10-01,"UNRATE","Civilian Unemployment Rate [UNRATE]",4.4,"causal_locf"

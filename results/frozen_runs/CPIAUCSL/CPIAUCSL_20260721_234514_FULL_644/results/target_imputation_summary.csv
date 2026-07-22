@@ -1,0 +1,2 @@
+"date","variable_code","variable_name","imputed_value","method"
+2025-10-01,"CPIAUCSL","Consumer Price Index: All Items [CPIAUCSL]",324.245,"causal_locf"

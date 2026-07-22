@@ -1,0 +1,5 @@
+"target_code","target_name","pca_em_windows","pca_em_required_windows","pca_em_nonconverged_windows","pca_em_max_iterations","boruta_fallback_refreshes","boruta_warning_panels","target_imputed_months","oos_evaluation_excluded_months"
+"CPIAUCSL","Consumer Price Index: All Items [CPIAUCSL]",360,274,0,0,0,0,1,2
+"PCEPI","Personal Consumption Expenditures Price Index [PCEPI]",360,274,0,0,0,0,0,0
+"INDPRO","Industrial Production Index [INDPRO]",360,274,0,0,0,0,0,0
+"UNRATE","Civilian Unemployment Rate [UNRATE]",360,274,0,0,1,1,1,2

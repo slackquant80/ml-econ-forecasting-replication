@@ -1,0 +1,59 @@
+ML Economic Forecasting — SSRN Working-Paper Execution Sequence
+===============================================================
+
+Purpose
+-------
+Generate, validate, freeze, and export the empirical release used in the first
+SSRN working paper. The primary evaluation track is monthly_transformed. DM and
+MCS are the primary inference methods. The post-selected HAC MAE comparison is
+supplementary and must not be described as a formal Giacomini–White test.
+
+Core targets
+------------
+CPIAUCSL, PCEPI, INDPRO, UNRATE
+
+Recommended sequence
+--------------------
+1. Install/check packages in the project R environment.
+   Rscript scripts/install-packages.R
+
+2. Run the new INDPRO target once with the Quick profile as a smoke test.
+   Rscript scripts/run-forecast-experiment.R --target=INDPRO --profile=quick --publish=false
+
+3. Review the INDPRO run validation_summary.csv and log. Do not publish the
+   Quick result as the paper result.
+
+4. Run all four pre-specified FULL experiments. By default this publishes each
+   validated target-scoped result, keeps CPIAUCSL as the default dashboard
+   target, validates the combined release, and freezes the FRED-MD data vintage.
+   Rscript scripts/run-ssrn-core-experiments.R
+
+   Optional partial recovery after a failed target:
+   Rscript scripts/run-ssrn-core-experiments.R --targets=INDPRO --freeze=false
+
+5. Re-run combined validation after any partial recovery.
+   Rscript scripts/validate-ssrn-release.R
+
+6. Freeze the release if it was not frozen in step 4.
+   Rscript scripts/freeze-ssrn-release.R
+
+7. Export paper-ready tables and figure data from the frozen release.
+   Rscript scripts/export-ssrn-paper-tables.R --rolling-months=12
+
+8. Refresh and validate the web showcase only after all four FULL results pass.
+   Rscript scripts/build-web-showcase.R
+   Rscript scripts/validate-web-showcase.R
+
+Key output locations
+--------------------
+results/ssrn/ssrn_release_validation.csv
+results/ssrn/ssrn_release_manifest.csv
+results/ssrn/ssrn_release_freeze_summary.csv
+results/ssrn/data_vintage/
+results/ssrn/paper_exports/
+
+Release rule
+------------
+Do not use existing QUICK results as the working-paper evidence. The paper
+release is valid only when scripts/validate-ssrn-release.R passes for all four
+FULL target runs with the same FRED-MD MD5 checksum.

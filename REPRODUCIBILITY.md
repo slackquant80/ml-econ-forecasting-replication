@@ -12,21 +12,36 @@
 - Primary inference: DM and MCS
 - MCS: `Tmax`, 90% confidence, 5,000 block-bootstrap replications
 
-## Two verification routes
+## Three verification routes
 
-### Route A — inspect the archived derived outputs
+### Route A — inspect and validate the archived derived outputs
 
 The `results/frozen_runs/` directories contain human-readable CSV outputs from each FULL experiment. `results/paper_exports/` contains the manuscript tables and figure-data exports. Run:
 
 ```bash
 python scripts/verify-public-release.py
+python scripts/validate-frozen-release.py
+python scripts/generate-release-inventory.py --check
 ```
 
-This checks repository structure, CSV readability, and the absence of known local/private paths.
+These checks cover repository structure, CSV readability, privacy/file policy, the four archived forecast panels, DM and MCS coverage, the sanitized 139-check release validation, key manuscript aggregates, and checksum-inventory freshness.
 
-### Route B — rerun the complete experiment
+### Route B — restore the software environment from a clean clone
 
-Restore the dependency environment from `renv.lock`, validate it, and then run the commands in `README.md`. The workflow creates new timestamped run IDs. Numerical results should agree up to platform- and package-dependent floating-point differences. Stochastic learners use prespecified origin-specific seeds, but exact bitwise identity across operating systems is not guaranteed.
+The repository includes `.Rprofile`, `renv/activate.R`, `renv/settings.json`, and `renv.lock`. From a clean clone:
+
+```r
+install.packages("renv", repos = "https://cloud.r-project.org")
+renv::restore()
+renv::status()
+source("scripts/validate-r-environment.R")
+```
+
+A clean-clone test completed successfully on Windows 11 with R 4.6.0 and `renv` 1.2.3. The packages were restored into the clone-specific project library, all seven direct package versions matched, the project state was consistent, and all project functions loaded successfully.
+
+### Route C — rerun the complete experiment
+
+Run the commands in `README.md`. The workflow creates new timestamped run IDs. Numerical results should agree up to platform- and package-dependent floating-point differences. Stochastic learners use prespecified origin-specific seeds, but exact bitwise identity across operating systems is not guaranteed.
 
 ## Reference environment
 
@@ -40,51 +55,31 @@ The frozen runs and release-machine checks use:
 - `forecast` 9.0.2
 - `sandwich` 3.1-2
 - `MCS` 0.2.0
+- `renv` 1.2.3 for dependency restoration
 
 Per-run `session_info.txt` files are archived with the frozen CSV outputs.
 
-## Dependency restoration with `renv`
+## Completed validation
 
-The repository includes `.Rprofile`, `renv/activate.R`, `renv/settings.json`, and `renv.lock`. From a clean clone:
+The following checks have passed:
 
-```r
-install.packages("renv", repos = "https://cloud.r-project.org")
-renv::restore()
-renv::status()
-```
+- R version exactly 4.6.0;
+- all seven direct package versions matched the recorded versions;
+- `renv::snapshot(prompt = FALSE)` reported the lockfile up to date;
+- `renv::status()` reported a consistent project state;
+- a newly cloned repository restored into its own project-local library;
+- `config.R` and `functions/source-all.R` loaded successfully;
+- GitHub Actions passed the public file-policy/privacy checks; and
+- the archived CSV release passed the independent frozen-output validator.
 
-On Windows, Rtools45 may be required if a package must be compiled from source. The lockfile records direct and transitive dependencies. It should be treated as part of the tagged research release.
+## Remaining gate before `v1.0.0`
 
-## Release-machine validation completed
-
-On the reference Windows machine, the following checks passed:
-
-- R version exactly 4.6.0
-- all seven direct package versions matched the recorded reference versions
-- `renv::snapshot(prompt = FALSE)` reported the lockfile already up to date
-- `renv::status()` reported a consistent project state
-- `config.R` loaded successfully
-- `functions/source-all.R` loaded all project functions successfully
-
-The same checks can be rerun with:
-
-```bash
-Rscript scripts/validate-r-environment.R
-```
-
-## Validation still required before `v1.0.0`
-
-The current consistency check was performed in the environment used to create the lockfile. Before the public `v1.0.0` tag, the repository must also pass:
-
-1. `renv::restore()` in a clean clone or clean project library;
-2. the local R environment/function-loading validation script;
-3. the final frozen-output/release validation workflow; and
-4. regeneration of the release checksum inventory after all tracked files are final.
+The complete four-target FULL pipeline has not yet been rerun from the clean clone. Before the permanent tag, run the end-to-end workflow, compare its outputs with the archived release, then regenerate `SHA256SUMS.txt` and `release_inventory.csv` after all tracked files are final.
 
 ## Expected validation status
 
-The internal release validation summary records 139 checks, zero failures, and status `PASS`. The public copy of the detailed validation file is sanitized; the internal original remains unchanged in the private project.
+The internal release validation summary records 139 checks, zero failures, and status `PASS`. The public detailed validation file is sanitized; the internal path-bearing original remains unchanged in the private development project.
 
-## Packaging and rerun scope
+## Scope and limitations
 
-The initial public package was assembled in an environment without an R runtime. File selection, privacy-path scanning, checksums, and CSV parsing were executed there. The dependency environment and R source-loading path have since been validated on the reference Windows machine. The complete four-target FULL pipeline has not yet been rerun from a clean clone; that remains a release gate rather than a completed claim.
+The initial public package was assembled separately from the development project. File selection, privacy-path scanning, checksums, and CSV parsing were performed on the public copy. The clean-clone environment restoration and function-loading test subsequently passed on the reference Windows machine. The archived outputs are independently checkable without the excluded private RDS objects; a complete rerun requires downloading the frozen FRED-MD vintage.

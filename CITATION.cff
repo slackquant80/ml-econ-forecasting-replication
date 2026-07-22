@@ -7,8 +7,9 @@ authors:
     given-names: Sungkyu
     email: scott.lee@yonsei.ac.kr
     affiliation: "AI Computing Program, Graduate School of Computing, Yonsei University"
-version: 0.1.0
-date-released: 2026-07-22
+version: 1.0.0-rc.1
+repository-code: "https://github.com/slackquant80/ml-econ-forecasting-replication"
+url: "https://github.com/slackquant80/ml-econ-forecasting-replication"
 license: MIT
 keywords:
   - macroeconomic forecasting

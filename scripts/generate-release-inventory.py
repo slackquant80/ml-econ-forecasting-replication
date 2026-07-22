@@ -1,0 +1,126 @@
+#!/usr/bin/env python3
+"""Generate or verify deterministic SHA-256 inventories for the repository."""
+from __future__ import annotations
+
+import argparse
+import csv
+import hashlib
+import io
+import subprocess
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+SHA_PATH = ROOT / "SHA256SUMS.txt"
+CSV_PATH = ROOT / "release_inventory.csv"
+EXCLUDED_FILES = {SHA_PATH, CSV_PATH}
+LOCAL_ONLY_DIRS = {".git", ".Rproj.user", "__pycache__"}
+RENV_LOCAL_DIRS = {
+    "library", "local", "cellar", "lock", "python", "sandbox", "staging"
+}
+
+
+def is_local_only(rel: Path) -> bool:
+    if any(part in LOCAL_ONLY_DIRS for part in rel.parts):
+        return True
+    return (
+        len(rel.parts) >= 2
+        and rel.parts[0] == "renv"
+        and rel.parts[1] in RENV_LOCAL_DIRS
+    )
+
+
+def repository_candidate_files() -> list[Path]:
+    """Return tracked plus untracked/non-ignored files, or archive fallback."""
+    try:
+        proc = subprocess.run(
+            [
+                "git", "-C", str(ROOT), "ls-files",
+                "--cached", "--others", "--exclude-standard", "-z",
+            ],
+            check=False,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.DEVNULL,
+        )
+        if proc.returncode == 0:
+            files: list[Path] = []
+            for raw in proc.stdout.split(b"\0"):
+                if not raw:
+                    continue
+                rel = Path(raw.decode("utf-8", errors="surrogateescape"))
+                path = ROOT / rel
+                if path.is_file() and path not in EXCLUDED_FILES:
+                    files.append(path)
+            return sorted(set(files), key=lambda p: p.relative_to(ROOT).as_posix())
+    except (OSError, ValueError):
+        pass
+
+    # Fallback for a downloaded source archive without .git metadata.
+    files: list[Path] = []
+    for path in ROOT.rglob("*"):
+        if not path.is_file() or path in EXCLUDED_FILES:
+            continue
+        rel = path.relative_to(ROOT)
+        if is_local_only(rel):
+            continue
+        files.append(path)
+    return sorted(files, key=lambda p: p.relative_to(ROOT).as_posix())
+
+
+def digest(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as handle:
+        for block in iter(lambda: handle.read(1024 * 1024), b""):
+            h.update(block)
+    return h.hexdigest()
+
+
+def render() -> tuple[str, str, int]:
+    files = repository_candidate_files()
+    rows: list[tuple[str, int, str]] = []
+    for path in files:
+        rel = path.relative_to(ROOT).as_posix()
+        rows.append((rel, path.stat().st_size, digest(path)))
+
+    sha_text = "".join(f"{sha}  {rel}\n" for rel, _, sha in rows)
+
+    buffer = io.StringIO(newline="")
+    writer = csv.writer(buffer, lineterminator="\n")
+    writer.writerow(["path", "size_bytes", "sha256"])
+    writer.writerows(rows)
+    return sha_text, buffer.getvalue(), len(rows)
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="fail if the committed inventory files are not current",
+    )
+    args = parser.parse_args()
+
+    sha_text, csv_text, count = render()
+    if args.check:
+        errors: list[str] = []
+        if not SHA_PATH.is_file() or SHA_PATH.read_text(encoding="utf-8") != sha_text:
+            errors.append("SHA256SUMS.txt is missing or stale")
+        if not CSV_PATH.is_file() or CSV_PATH.read_text(encoding="utf-8-sig") != csv_text:
+            errors.append("release_inventory.csv is missing or stale")
+        if errors:
+            print("FAIL")
+            for error in errors:
+                print("-", error)
+            print("Run: python scripts/generate-release-inventory.py")
+            return 1
+        print(f"PASS: release inventories are current for {count} repository-candidate files.")
+        return 0
+
+    SHA_PATH.write_text(sha_text, encoding="utf-8", newline="\n")
+    CSV_PATH.write_text(csv_text, encoding="utf-8", newline="\n")
+    print(f"WROTE: {SHA_PATH.name}, {CSV_PATH.name} ({count} repository-candidate files)")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

@@ -81,6 +81,20 @@
   ],
   "mean_top12_positive_share_SE": 0.855996093761454,
   "mean_top12_deterioration_share_SE": 0.8912396054896341,
-  "file_count_before_audit": 243,
-  "total_size_bytes_before_audit": 38482602
+  "candidate_version": "1.0.0-rc.1",
+  "clean_clone_validation": {
+    "validated_at": "2026-07-23",
+    "operating_system": "Windows 11 x64",
+    "r_version": "4.6.0",
+    "renv_version": "1.2.3",
+    "project_library_restored": true,
+    "renv_status": "consistent",
+    "direct_package_versions_match": true,
+    "project_functions_loaded": true,
+    "status": "PASS"
+  },
+  "archived_output_python_validation": {
+    "status": "PASS"
+  },
+  "full_pipeline_rerun_from_clean_clone": false
 }

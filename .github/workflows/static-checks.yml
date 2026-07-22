@@ -8,4 +8,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python scripts/verify-public-release.py
+      - name: Verify public file policy and privacy
+        run: python scripts/verify-public-release.py
+      - name: Validate frozen research outputs
+        run: python scripts/validate-frozen-release.py
+      - name: Check release inventories
+        run: python scripts/generate-release-inventory.py --check

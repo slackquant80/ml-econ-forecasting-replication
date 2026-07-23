@@ -7,9 +7,6 @@ authors:
     given-names: Sungkyu
     email: scott.lee@yonsei.ac.kr
     affiliation: "AI Computing Program, Graduate School of Computing, Yonsei University"
-version: 1.0.0
-repository-code: "https://github.com/slackquant80/ml-econ-forecasting-replication"
-url: "https://github.com/slackquant80/ml-econ-forecasting-replication"
 license: MIT
 keywords:
   - macroeconomic forecasting
@@ -17,3 +14,8 @@ keywords:
   - FRED-MD
   - Diebold-Mariano
   - Model Confidence Set
+version: 1.0.0
+date-released: 2026-07-23
+doi: "10.5281/zenodo.21500978"
+repository-code: "https://github.com/slackquant80/ml-econ-forecasting-replication"
+url: "https://doi.org/10.5281/zenodo.21500978"

@@ -23,7 +23,7 @@ required = [
     "scripts/generate-release-inventory.py",
     "SHA256SUMS.txt",
     "release_inventory.csv",
-    "paper/Beyond_Average_Accuracy_Preprint_v0.10.5.pdf",
+    "paper/Beyond_Average_Accuracy_Preprint_v1.0.pdf",
     "results/release/public_release_manifest.csv",
     "results/release/ssrn_release_validation_summary.csv",
 ]

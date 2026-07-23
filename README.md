@@ -1,16 +1,16 @@
 # ML Economic Forecasting — replication materials
 
+[![DOI](https://zenodo.org/badge/1308972661.svg)](https://doi.org/10.5281/zenodo.21500977)
+
 This repository contains the code, frozen derived outputs, validation records, and manuscript associated with **“Beyond Average Accuracy: Statistical Distinguishability and Temporal Concentration in Data-Rich Macroeconomic Forecasting.”** The study compares nine individual forecasting models and three forecast combinations for CPI inflation, PCE inflation, industrial production growth, and changes in unemployment at 1-, 3-, 6-, and 12-month horizons. It separates average accuracy from statistical distinguishability and temporal durability.
 
 Repository: https://github.com/slackquant80/ml-econ-forecasting-replication
 
 ## Release status
 
-This branch contains the finalized source tree for **v1.0.0**. The internal research release recorded 139 checks, zero failures, and status `PASS`. Local absolute paths and development-only artifacts have been removed from the public package.
+This repository contains the public **v1.0.0** replication package for the accompanying working paper. The version used for the paper is permanently archived at Zenodo under the version-specific DOI [10.5281/zenodo.21500978](https://doi.org/10.5281/zenodo.21500978). The Zenodo concept DOI for all software versions is [10.5281/zenodo.21500977](https://doi.org/10.5281/zenodo.21500977).
 
-The dependency environment is recorded in `renv.lock`. Validation on a clean GitHub clone confirmed R 4.6.0, restoration into a project-local `renv` library, the seven direct package versions reported in the paper, a consistent `renv` state, and successful loading of all project functions. The archived CSV release and paper exports are checked independently by Python.
-
-An end-to-end four-target FULL rerun was also completed from the clean clone on the reference Windows environment. The frozen FRED-MD checksum was verified, the complete workflow finished, the SSRN research-protocol validation returned `PASS`, and the paper-table export completed. The rerun directories were validation-only and are not committed; the repository retains the frozen paper release as its archival result set. See `results/release/FULL_RERUN_VALIDATION.md` and `REPRODUCIBILITY.md` for scope and limitations.
+The release passed the public file-policy and privacy checks, independent frozen-output validation, SHA-256 inventory verification, clean-clone `renv` restoration, and a complete four-target FULL workflow rerun. The internal research release recorded 139 checks, zero failures, and status `PASS`.
 
 ## Repository contents
 
@@ -19,7 +19,7 @@ An end-to-end four-target FULL rerun was also completed from the clean clone on 
 - `results/frozen_runs/`: CSV outputs from the four paper-core FULL runs (RDS objects and logs excluded)
 - `results/paper_exports/`: tables and figure-data exports used by the manuscript
 - `results/release/`: sanitized release manifest and validation records
-- `paper/`: working-paper PDF
+- `paper/`: final working-paper PDF
 - `data/`: instructions and checksum only; source data are not redistributed
 
 The interactive dashboard is linked below, but its Shiny UI and deployment source are **not** included in this replication repository.
@@ -101,6 +101,14 @@ The source CSV is not redistributed. See `DATA_AVAILABILITY.md` and `data/README
 ## Interactive dashboard
 
 https://slackquant.shinyapps.io/ml_econ_forecasting/
+
+## Archival record
+
+- **Version DOI (v1.0.0):** [10.5281/zenodo.21500978](https://doi.org/10.5281/zenodo.21500978)
+- **Concept DOI (all versions):** [10.5281/zenodo.21500977](https://doi.org/10.5281/zenodo.21500977)
+- **GitHub repository:** [https://github.com/slackquant80/ml-econ-forecasting-replication](https://github.com/slackquant80/ml-econ-forecasting-replication)
+- **Interactive dashboard:** [https://slackquant.shinyapps.io/ml_econ_forecasting/](https://slackquant.shinyapps.io/ml_econ_forecasting/)
+- **Final working-paper PDF:** `paper/Beyond_Average_Accuracy_Preprint_v1.0.pdf`
 
 ## License and citation
 

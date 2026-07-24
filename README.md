@@ -113,5 +113,3 @@ https://slackquant.shinyapps.io/ml_econ_forecasting/
 ## License and citation
 
 Code is released under the MIT License. The manuscript and third-party source data are excluded from that license. Citation metadata are provided in `CITATION.cff`.
-
-The permanent Zenodo DOI will be added to `CITATION.cff`, this README, and the manuscript after the GitHub `v1.0.0` release is archived.
